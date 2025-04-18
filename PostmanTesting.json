@@ -1,0 +1,245 @@
+{
+  "info": {
+    "name": "TaskManager API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "POST create task 1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\": \"Задача 1\", \"description\": \"Описание задачи 1\", \"status\": \"Pending\"}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "tasks"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST create task 2",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\": \"Задача 2\", \"description\": \"Описание задачи 2\", \"status\": \"InProgress\"}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "tasks"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST create task 3",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\": \"Задача 3\", \"description\": \"Описание задачи 3\", \"status\": \"Completed\"}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "tasks"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET all tasks",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "tasks"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PUT update task 1",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\": \"Обновлённая задача 1\", \"description\": \"Обновлённое описание 1\", \"status\": \"InProgress\"}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/tasks/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "tasks",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PUT update task 2",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\": \"Обновлённая задача 2\", \"description\": \"Обновлённое описание 2\", \"status\": \"Completed\"}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/tasks/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "tasks",
+            "2"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PUT update task 3",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\": \"Обновлённая задача 3\", \"description\": \"Обновлённое описание 3\", \"status\": \"Pending\"}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/tasks/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "tasks",
+            "3"
+          ]
+        }
+      }
+    },
+    {
+      "name": "DELETE task 1",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:5000/tasks/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "tasks",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "DELETE task 2",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:5000/tasks/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "tasks",
+            "2"
+          ]
+        }
+      }
+    },
+    {
+      "name": "DELETE task 3",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:5000/tasks/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "tasks",
+            "3"
+          ]
+        }
+      }
+    }
+  ]
+}
